@@ -1,0 +1,22 @@
+{
+  "name": "quizz-app",
+  "version": "1.0.0",
+  "description": "Projeto para apreendizado de node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucaslsps/quizz-app.git"
+  },
+  "keywords": [
+    "quiz"
+  ],
+  "author": "Lucas Peixoto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucaslsps/quizz-app/issues"
+  },
+  "homepage": "https://github.com/Lucaslsps/quizz-app#readme"
+}
