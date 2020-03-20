@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
-const app = express()
+const app = express();
 
 const PORT = process.env.PORT || 3000;
 num = 0;
@@ -15,9 +15,8 @@ app.get('/', function (req, res) {
 })
 
 app.post('/', function (req, res) {
-  console.log(req.body.img_values);
-  console.log("postado" + num);
-  num++;
+  console.log(req.body);
+  console.log('Foram enviados os valores:' + req.body["img1"]);
 })
 
 app.listen(PORT, function () {

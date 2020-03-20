@@ -51,10 +51,17 @@ $(document).ready(function(){
 
     $("#enviar").click(function(){
         var img_values = [img1_value, img2_value, img3_value];
+        nome = document.getElementById("Nome").value;
+        if(nome == ""){
+            alert("Insira seu nome");
+            return;
+        }
+        
         $.ajax({
             type:'POST',
             url:'/',
-            data: img_values,
+            dataType:"Json",
+            data: {img1:img1_value,img2:img2_value,img3:img3_value},
             success:function(reponse){console.log("foi")}
         });
     });

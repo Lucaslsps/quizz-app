@@ -99,3 +99,7 @@ body{
     display: block;
     margin-top: 5px;
 } 
+
+.form-control{
+    width: 200px;
+}
