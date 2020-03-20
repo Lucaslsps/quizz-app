@@ -68,6 +68,8 @@ $(document).ready(function(){
             data: {nome: nome, img1:img1_value,img2:img2_value,img3:img3_value},
             success:function(reponse){console.log("foi")}
         });
+        document.getElementById("Nome").value = "";
+        alert("Obrigado pelo voto :)");
     });
 });
 
