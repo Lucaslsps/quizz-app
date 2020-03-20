@@ -56,9 +56,9 @@ app.post('/', function (req, res) {
       });
 
       console.log(newVoto);
-      /*newVoto.save()
+      newVoto.save()
       .then()
-      .catch(err => console.log(err));*/
+      .catch(err => console.log(err));
     }
   });
 })
