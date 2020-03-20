@@ -3,43 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/monojsilag.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>  
-    <script type="text/javacript" src="/public/js/select_option.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/js/select_option.js"></script>
   </head>
-  <body style="background-color:#779ECB;">
-    
-    <div class="box">
-      
-      <div class="card">
-        <div class="imgBx">
-            <img onclick="javacript:selecionado();" src="https://vignette.wikia.nocookie.net/wikidonarutoshippuden/images/6/61/431px-Kakashi_Hatake.png/revision/latest/scale-to-width-down/340?cb=20120418155722&path-prefix=pt" alt="images">
+  <body>
+    <div class="card-wrapper">
+      <div class="box">
+        <div class="card sel1">
+          <div class="imgBx">
+            <img id="img1" src="https://vignette.wikia.nocookie.net/wikidonarutoshippuden/images/6/61/431px-Kakashi_Hatake.png/revision/latest/scale-to-width-down/340?cb=20120418155722&path-prefix=pt" alt="images">
+          </div>
+          <div class="details">
+              <h2>Kakashi Hatake<br><span>Jounin</span></h2>
+          </div>
         </div>
-        <div class="details">
-            <h2>Kakashi Hatake<br><span>Jounin</span></h2>
+      
+          <div class="card sel2">
+            <div class="imgBx">
+              <img id="img2" src="https://3.bp.blogspot.com/-agDYDmK-2DE/UKkJP8QgD1I/AAAAAAAAAFo/a-eKl7UpBYA/s1600/imagesCA5SKTI4.jpg" alt="images">
+            </div>
+            <div class="details">
+              <h2>Itachi Uchiha<br><span>Nukenin</span></h2>
+            </div>
+          </div>
+
+          <div class="card sel3">
+            <div class="imgBx">
+              <img id="img3" src="https://vignette.wikia.nocookie.net/naruto/images/6/63/Minato_Namikaze_%28Infobox_-_Parte_I%29.PNG/revision/latest?cb=20141127124321&path-prefix=pt-br" alt="images">
+            </div>
+            <div class="details">
+              <h2>Minato Namikaze<br><span>Hokage</span></h2>
+            </div>
         </div>
       </div>
-    
-        <div class="card">
-          <div class="imgBx">
-            <img src="https://3.bp.blogspot.com/-agDYDmK-2DE/UKkJP8QgD1I/AAAAAAAAAFo/a-eKl7UpBYA/s1600/imagesCA5SKTI4.jpg" alt="images">
-          </div>
-          <div class="details">
-            <h2>Itachi Uchiha<br><span>Nukenin</span></h2>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="imgBx">
-            <img src="https://vignette.wikia.nocookie.net/naruto/images/6/63/Minato_Namikaze_%28Infobox_-_Parte_I%29.PNG/revision/latest?cb=20141127124321&path-prefix=pt-br" alt="images">
-          </div>
-          <div class="details">
-            <h2>Minato Namikaze<br><span>Hokage</span></h2>
-          </div>
-       </div>
-    
     </div>
-  
+    
+    <br>
+
+    <center><button type="button" class="btn btn-primary" id="enviar">Enviar</button></center>
   </body>
 </html>

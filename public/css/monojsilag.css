@@ -1,13 +1,17 @@
 body{
+    background-color:#779ECB;
+}
+
+.card-wrapper{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content:center;
     align-items: center;
-    min-height: 100vh;
-    background: #212121;
+    min-height: 50vh;
     font-family: sans-serif;
 }
+
 .box{
     width: 1200px;
     display: grid;
@@ -90,9 +94,8 @@ body{
 
 .card .details h2 span{
     font-weight: bold;
-    font-size: 16px;
-    color: #3dbdf8;
+    font-size: 12px;
+    color: #000000;
     display: block;
     margin-top: 5px;
-    text-shadow: 2px 2px #c9d5db;
 } 
