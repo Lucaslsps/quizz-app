@@ -1,8 +1,3 @@
-// Variáveis de posição dos cards
-var img1_value = 0;
-var img2_value = 0;
-var img3_value = 0;
-var nome = "";
 // Função para definir a cord do card de acordo com sua posição
 function define_color(card, img_value){
     card_sel = document.getElementsByClassName(card);
@@ -22,6 +17,15 @@ function define_color(card, img_value){
 
 // Função necessária para que o javascript não rode antes da página ser renderizada
 $(document).ready(function(){
+    // Nome dos cards
+    var nome1_value = document.getElementById("nome1").innerText;
+    var nome2_value = document.getElementById("nome2").innerText;
+    var nome3_value = document.getElementById("nome3").innerText;
+
+    // Valores dos cards
+    var img1_value = 0;
+    var img2_value = 0;
+    var img3_value = 0;
     
     // A cada clique, define o novo valor do card 1 e muda sua cor
     $( "#img1" ).click(function() {
@@ -60,12 +64,25 @@ $(document).ready(function(){
             alert("Insira seu nome");
             return;
         }
+        if(img1_value == 0 || img2_value == 0 || img3_value == 0){
+            alert("Selecione uma cor para todos os personagens");
+            return;
+        }
+        if(img1_value == img2_value || img1_value == img3_value || img2_value == img3_value){
+            alert("Selecione somente uma cor para cada personagem");
+            return;
+        }
         
         $.ajax({
             type:'POST',
             url:'/',
             dataType:"Json",
-            data: {nome: nome, img1:img1_value,img2:img2_value,img3:img3_value},
+            data: {
+                nome: nome, 
+                voto1:{card:nome1_value, valor: img1_value},
+                voto2:{card:nome2_value, valor: img2_value},
+                voto3:{card:nome3_value, valor: img3_value},
+            },
             success:function(reponse){console.log("foi")}
         });
         document.getElementById("Nome").value = "";

@@ -5,16 +5,34 @@ const VotoSchema = new mongoose.Schema({
         required: true
     },
     voto1: {
-        type: Number,
-        required: true
+        card :{
+            type: String,
+            required: true
+        },
+        valor :{
+            type: Number,
+            required: true
+        }
     },
     voto2: {
-        type: Number,
-        required: true
+        card :{
+            type: String,
+            required: true
+        },
+        valor :{
+            type: Number,
+            required: true
+        }
     },
     voto3: {
-        type: Number,
-        required: true
+        card :{
+            type: String,
+            required: true
+        },
+        valor :{
+            type: Number,
+            required: true
+        }
     },
     date: {
         type: Date,
@@ -22,6 +40,6 @@ const VotoSchema = new mongoose.Schema({
     }
 });
 
-const Voto = mongoose.model('Voto,', VotoSchema);
+const Voto = mongoose.model('Voto', VotoSchema);
 
 module.exports = Voto;
