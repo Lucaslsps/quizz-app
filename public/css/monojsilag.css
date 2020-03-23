@@ -1,5 +1,5 @@
 body{
-    background-color:#779ECB;
+    background-color:rgb(255, 255, 255);
 }
 
 .card-wrapper{
@@ -10,6 +10,9 @@ body{
     align-items: center;
     min-height: 50vh;
     font-family: sans-serif;
+    background-color: rgba(119, 158, 203, 0.534);
+    box-shadow: 2px 2px 20px grey;
+
 }
 
 .box{
@@ -38,7 +41,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 4px;
-    background: #3065AC;
+    background: rgb(32, 76, 134);
     transition: 0.5s;
     z-index:-1;
 }

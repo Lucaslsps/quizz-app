@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
                 cards_escolhidos.push(card_aux);
             }
 
-            res.render('index.ejs', {cards: cards_escolhidos});
+            res.render('index.ejs', {cards: cards_escolhidos, colecao: col_escolhida});
         })
     });
    // res.render('index.ejs');
