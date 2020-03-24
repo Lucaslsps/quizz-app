@@ -28,6 +28,7 @@ router.get('/', (req, res) => {
         .then( col_escolhida_valores =>{
             //console.log("valores escolhidos" + col_escolhida_valores);
             //console.log("Segunda func" + col_escolhida);
+            
             cards_escolhidos = [];
 
             while(cards_escolhidos.length < 3){
@@ -36,6 +37,7 @@ router.get('/', (req, res) => {
                 cards_escolhidos.push(card_aux);
             }
             //console.log("Sendo mandado" + cards_escolhidos + col_escolhida);
+
             res.render('index.ejs', {cards: cards_escolhidos, colecao: col_escolhida});
         })
     });

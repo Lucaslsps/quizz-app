@@ -4,7 +4,7 @@ const CardSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    colcao: {
+    colecao: {
         type: String,
         required: true
     },
