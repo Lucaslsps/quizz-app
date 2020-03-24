@@ -44,7 +44,7 @@ app.post('/', function (req, res) {
   const voto2_value = req.body["voto2"];
   const voto3_value = req.body["voto3"];
 
-  Voto.findOne({ nome:nome_value})
+  Voto.findOne({ nome:nome_value, voto1:voto1_value, voto2:voto2_value, voto3: voto3_value})
   .then(voto =>{
     if(voto){
 
